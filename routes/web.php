@@ -32,3 +32,6 @@ Route::get('/single-actualite', function() {
 Route::get('/contact', function () {
     return view('contact');
 });
+
+// Authentification routes
+Route::get('/espace-admin', [App\Http\Controllers\Auth\LoginController::class, 'show'])->name('login');

@@ -10,7 +10,7 @@
         @vite(['resources/css/app.css', 'resources/scss/app.scss'])
     </head>
 
-    <body>
+    <body class="bg-gray-50">
         <!-- Header -->
         @include('components.header')
 
