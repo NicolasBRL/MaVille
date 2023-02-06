@@ -13,6 +13,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Page accueil
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
+});
+
+// Page acutalités
+Route::get('/actualites', function() {
+    return view('actualites');
+});
+
+// Page single acutalité
+Route::get('/single-actualite', function() {
+    return view('single-actualites');
+});
+
+// Page contact
+Route::get('/contact', function () {
+    return view('contact');
 });
