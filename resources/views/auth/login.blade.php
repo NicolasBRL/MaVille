@@ -1,5 +1,7 @@
 @extends('layouts.front')
 
+@section('title', '- Connexion')
+
 @section('content')
 <main id="login-page">
   <div class="form-container">

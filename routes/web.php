@@ -33,6 +33,27 @@ Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
 
-// Authentification routes
-Route::get('/espace-admin', [App\Http\Controllers\Auth\LoginController::class, 'show'])->name('login');
-Route::post('/espace-admin', [App\Http\Controllers\Auth\LoginController::class, 'login'])->name('login.connection');
+
+/**
+ * Utilisateur non connecté
+ */
+Route::group(['middleware' => ['guest']], function () {
+    // Connexion
+    Route::get('/espace-admin', [App\Http\Controllers\Auth\LoginController::class, 'show'])->name('login');
+    Route::post('/espace-admin', [App\Http\Controllers\Auth\LoginController::class, 'login'])->name('login.connection');
+});
+
+/**
+ * Utilisateur connecté
+ */
+    
+ Route::group(['middleware' => ['auth']], function () {
+
+    // Dashboard
+    Route::group(['prefix' => 'dashboard'], function () {
+        Route::get('/', [App\Http\Controllers\DashboardController::class, 'show'])->name('dashboard');
+    });
+
+    // Déconnexion
+    Route::get('/logout', [App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('logout');
+});

@@ -1,5 +1,7 @@
 @extends('layouts.front')
 
+@section('title', '')
+
 @section('content')
 <main id="home-page">
     <!-- HERO SECTION -->

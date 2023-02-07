@@ -14,15 +14,23 @@
         <link rel="icon" type="image/png" href="{{asset('favicon-16x16.png')}}" sizes="16x16" />
     </head>
 
-    <body class="bg-gray-50">
+    <body class="bg-gray-50" id="dashboard">
         <!-- Header -->
-        @include('components.header')
+        @include('components.dashboard.header')
 
         <!-- Page content -->
-        @yield('content')
+        <main>
+                <div class="container mx-auto px-4">
+                    <div class="page-title-container mb-6">
+                        <h1>@yield('page')</h1>
+                    </div>
 
-        <!-- Footer -->
-        @include('components.footer')
+                    <div class="page-content-container">
+                        @yield('content')
+                    </div>
+                </div>
+        </main>
+        
 
         <!-- Script -->
     </body>
