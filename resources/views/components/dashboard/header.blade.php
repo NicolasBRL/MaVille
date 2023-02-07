@@ -8,7 +8,7 @@
     <nav class="menu">
         <ul>
             <li class="{{ request()->routeIs('dashboard') ? 'active' : '' }}"><a href="{{route('dashboard')}}" class="nav-link">Dashboard</a></li>
-            <li class="{{ request()->routeIs('home') ? 'active' : '' }}"><a href="{{route('home')}}" class="nav-link">Utilisateur</a></li>
+            <li class="{{ request()->routeIs('users*') ? 'active' : '' }}"><a href="{{route('users.index')}}" class="nav-link">Utilisateurs</a></li>
         </ul>
     </nav>
 

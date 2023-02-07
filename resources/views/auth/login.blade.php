@@ -6,18 +6,7 @@
 <main id="login-page">
   <div class="form-container">
     <img src="{{asset('images/logo.svg')}}" alt="logo la roche sur yon">
-
-
-    @if (isset($errors) && count($errors) > 0)
-    <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 mt-8 rounded relative" role="alert">
-      <ul>
-        @foreach ($errors->all() as $error)
-        <li>{{ $error }}</li>
-        @endforeach
-      </ul>
-    </div>
-    @endif
-
+    @include('components.dashboard.alert')
     <form class="space-y-6" method="POST" action="{{ route('login.connection') }}">
       @csrf
       <input type="hidden" name="remember" value="true">

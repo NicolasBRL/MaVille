@@ -39,8 +39,8 @@ Route::get('/contact', function () {
  */
 Route::group(['middleware' => ['guest']], function () {
     // Connexion
-    Route::get('/espace-admin', [App\Http\Controllers\Auth\LoginController::class, 'show'])->name('login');
-    Route::post('/espace-admin', [App\Http\Controllers\Auth\LoginController::class, 'login'])->name('login.connection');
+    Route::get('/espace-admin', [App\Http\Controllers\LoginController::class, 'show'])->name('login');
+    Route::post('/espace-admin', [App\Http\Controllers\LoginController::class, 'login'])->name('login.connection');
 });
 
 /**
@@ -52,8 +52,11 @@ Route::group(['middleware' => ['guest']], function () {
     // Dashboard
     Route::group(['prefix' => 'dashboard'], function () {
         Route::get('/', [App\Http\Controllers\DashboardController::class, 'show'])->name('dashboard');
+
+        // Users
+        Route::resource("users", App\Http\Controllers\UserController::class);
     });
 
     // Déconnexion
-    Route::get('/logout', [App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('logout');
+    Route::get('/logout', [App\Http\Controllers\LoginController::class, 'logout'])->name('logout');
 });
