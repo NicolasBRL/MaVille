@@ -1,0 +1,13 @@
+#login-page{
+    max-width: 372px;
+    margin: 0 auto;
+
+    .form-container{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        form{width: 100%;}
+    }
+}

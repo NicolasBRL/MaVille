@@ -1,0 +1,26 @@
+$red: #cc0100;
+$text: #111827;
+$text-gray: #4b5563;
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+@mixin poppins-bold-60 {
+    font-size: 3.75rem;
+    line-height: 1;
+    font-weight: 600;
+    font-family: Poppins, sans-serif;
+}
+
+@mixin poppins-bold-18 {
+    line-height: 1.5rem;
+    font-weight: 600;
+    font-size: 0.875rem;
+    font-family: Poppins, sans-serif;
+}
+
+@mixin poppins-reg-18 {
+    line-height: 2rem;
+    font-size: 1.125rem;
+    font-family: Poppins, sans-serif;
+}

@@ -1,0 +1,6 @@
+.btn{
+    padding: .375rem .875rem;
+    @include poppins-reg-18;
+
+    &.fill-red{background-color: $red;color:#fff}
+}
