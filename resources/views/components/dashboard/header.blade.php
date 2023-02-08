@@ -9,10 +9,11 @@
         <ul>
             <li class="{{ request()->routeIs('dashboard') ? 'active' : '' }}"><a href="{{route('dashboard')}}" class="nav-link">Dashboard</a></li>
             <li class="{{ request()->routeIs('users*') ? 'active' : '' }}"><a href="{{route('users.index')}}" class="nav-link">Utilisateurs</a></li>
+            <li class="{{ request()->routeIs('actualites*') ? 'active' : '' }}"><a href="{{route('actualites.index')}}" class="nav-link">Actualités</a></li>
         </ul>
     </nav>
 
-    <a href="{{route('logout')}}" id="logout-btn" class="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">
+    <a href="{{route('logout')}}" id="logout-btn" class="text-white bg-red-600 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">
         Déconnexion
 
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 ml-2 -mr-1">

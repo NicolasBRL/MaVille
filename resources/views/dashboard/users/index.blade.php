@@ -5,7 +5,7 @@
 
 @section('content')
 @include('components.dashboard.alert')
-<a href="{{ route('users.create') }}" class="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center float-right">
+<a href="{{ route('users.create') }}" class="text-white bg-red-600 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center float-right">
     Créer un utilisateur
 </a>
 

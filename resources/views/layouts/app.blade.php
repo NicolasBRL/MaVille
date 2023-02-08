@@ -7,7 +7,7 @@
         <title>La Roche sur Yon @yield('title')</title>
 
         <!-- Styles -->
-        @vite(['resources/css/app.css', 'resources/scss/app.scss'])
+        @vite(['resources/css/app.css', 'resources/scss/app.scss', 'resources/js/app.js'])
 
         <!-- Favicon -->
         <link rel="icon" type="image/png" href="{{asset('favicon-32x32.png')}}" sizes="32x32" />
@@ -33,5 +33,7 @@
         
 
         <!-- Script -->
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+        @yield('script')
     </body>
 </html>

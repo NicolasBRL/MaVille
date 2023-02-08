@@ -18,20 +18,14 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
-// Page acutalités
-Route::get('/actualites', function() {
-    return view('actualites');
-})->name('actualites');
-
+// Page actalité
+Route::get('/actualites', [App\Http\Controllers\PostController::class, 'public'])->name('actualites');
 // Page single acutalité
-Route::get('/single-actualite', function() {
-    return view('single-actualites');
-})->name('single-actualites');
+Route::get('/actualites/{slug}', [App\Http\Controllers\PostController::class, 'show'])->name('actualites.article');
 
 // Page contact
-Route::get('/contact', function () {
-    return view('contact');
-})->name('contact');
+Route::get('/contact', [App\Http\Controllers\ContactController::class, 'index'])->name('contact');
+Route::post('/contact', [App\Http\Controllers\ContactController::class, 'store'])->name('contact.store');
 
 
 /**
@@ -55,6 +49,9 @@ Route::group(['middleware' => ['guest']], function () {
 
         // Users
         Route::resource("users", App\Http\Controllers\UserController::class);
+
+        // Actualités
+        Route::resource("actualites", App\Http\Controllers\PostController::class);
     });
 
     // Déconnexion
