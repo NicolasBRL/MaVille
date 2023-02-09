@@ -5,145 +5,74 @@
 @section('content')
 <main id="home-page">
     <!-- HERO SECTION -->
-    <div id="hero" >
+    <section id="hero">
         <div class="hero-content">
             <div class="text-center">
                 <h1>Bienvenue à<br>la Roche sur Yon</h1>
                 <p>Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
-                <div class="cta-row">
-                    <a href="#decouvrir-la-roche-sur-yon" class="btn fill-red">Découvrir</a>
-                    <a href="{{route('contact')}}" class="contact-btn">Nous contacter <span aria-hidden="true">→</span></a>
-                </div>
             </div>
         </div>
 
         <div class="hero-bg-img absolute">
             <img src="{{asset('images/place-napoleon-la-roche-sur-yon.jpeg')}}" lady="loading" alt="place napoléon à la roche sur yon">
         </div>
-    </div>
+    </section>
 
-    <!--  -->
-    La Roche-sur-Yon est une ville située dans l'ouest de la France, offrant de nombreuses activités pour les touristes. Voici quelques idées :
-
-    Parc des Oiseaux: Un parc de loisirs et de découverte de la nature avec plus de 400 espèces d'oiseaux d'Europe et d'ailleurs.
-
-    Musée de la Roche-sur-Yon: Un musée d'histoire et d'art local avec des expositions permanentes sur l'histoire de la ville et des expositions temporaires.
-
-    Place Napoléon: Une place historique avec une statue de Napoléon Bonaparte, des fontaines et des jardins publics.
-
-    Marché Central: Un grand marché couvert proposant des produits frais, des produits artisanaux et des souvenirs.
-
-    Château de Terre-Neuve: Un château Renaissance situé à quelques kilomètres de la ville, avec un parc, un jardin et un moulin.
-
-    Jardins et Parcs: La ville compte de nombreux jardins et parcs publics, tels que le Parc des Sports et le Jardin des Plantes, offrant des espaces verts pour se détendre et se promener.
-
-    Événements et festivals: La Roche-sur-Yon organise régulièrement des événements culturels et des festivals, tels que la Foire de la Saint-Joseph et le Festival International de Théâtre.
-
-    <div class="flex justify-center items-center">
-  <!--- more free and premium Tailwind CSS components at https://tailwinduikit.com/ --->
-  <div class="2xl:mx-auto 2xl:container lg:px-20 lg:py-16 md:py-12 md:px-6 py-9 px-4 w-96 sm:w-auto">
-    <div role="main" class="flex flex-col items-center justify-center">
-      <h1 class="text-4xl font-semibold leading-9 text-center text-gray-800 dark:text-gray-50">This Week Blogs</h1>
-      <p class="text-base leading-normal text-center text-gray-600 dark:text-white mt-4 lg:w-1/2 md:w-10/12 w-11/12">If you're looking for random paragraphs, you've come to the right place. When a random word or a random sentence isn't quite enough</p>
-    </div>
-    <div class="lg:flex items-stretch md:mt-12 mt-8">
-      <div class="lg:w-1/2">
-        <div class="sm:flex items-center justify-between xl:gap-x-8 gap-x-6">
-          <div class="sm:w-1/2 relative">
-            <div>
-              <p class="p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0">12 April 2021</p>
-              <div class="absolute bottom-0 left-0 p-6">
-                <h2 class="text-xl font-semibold 5 text-white">The Decorated Ways</h2>
-                <p class="text-base leading-4 text-white mt-2">Dive into minimalism</p>
-                <a href="#" class="flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline">
-                  <p class="pr-2 text-sm font-medium leading-none">Read More</p>
-                  →
-                </a>
-              </div>
+    <!-- DATA SECTION -->
+    <section id="city-number" class="bg-red-600 p-8 relative">
+        <div class="flex max-w-6xl justify-center mx-auto">
+            <div class="w-4/12 text-center separator">
+                <span class="title-number block text-4xl text-white">97 771</span>
+                <span class="title uppercase text-white">habitants</span>
             </div>
-            <img src="https://i.ibb.co/DYxtCJq/img-1.png" class="w-full" alt="chair" />
-          </div>
-          <div class="sm:w-1/2 sm:mt-0 mt-4 relative">
-            <div>
-              <p class="p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0">12 April 2021</p>
-              <div class="absolute bottom-0 left-0 p-6">
-                <h2 class="text-xl font-semibold 5 text-white">The Decorated Ways</h2>
-                <p class="text-base leading-4 text-white mt-2">Dive into minimalism</p>
-                <a href="#" class="flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline">
-                  <p class="pr-2 text-sm font-medium leading-none">Read More</p>
-                  →
-                </a>
-              </div>
+
+            <div class="w-4/12 text-center separator">
+                <span class="title-number block text-4xl text-white">1804</span>
+                <span class="title uppercase text-white">fondée en </span>
             </div>
-            <img src="https://i.ibb.co/3C5HvxC/img-2.png" class="w-full" alt="wall design" />
-          </div>
         </div>
-        <div class="relative">
-          <div>
-            <p class="md:p-10 p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0">12 April 2021</p>
-            <div class="absolute bottom-0 left-0 md:p-10 p-6">
-              <h2 class="text-xl font-semibold 5 text-white">The Decorated Ways</h2>
-              <p class="text-base leading-4 text-white mt-2">Dive into minimalism</p>
-              <a href="#" class="flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline">
-                <p class="pr-2 text-sm font-medium leading-none">Read More</p>
-                →
-              </a>
+    </section>
+
+    <section id="posts-list" class="px-8 py-20">
+        <div class="container mx-auto text-4xl font-bold">
+            <h2>Nos dernières actualités</h2>
+            <div class="overflow-hidden">
+                    <div class="py-6 grid gap-8 grid-cols-3">
+                        @foreach($posts as $post)
+                        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+                            <a href="{{ route('actualites.article', $post->slug) }}">
+                                <img class="rounded-t-lg max-h-64 w-full object-cover" src="{{ asset('storage/'.$post->thumb_path) }}" alt="" />
+                            </a>
+                            <div class="p-5">
+                                <a href="{{ route('actualites.article', $post->slug) }}">
+                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">{{ $post->title }}</h5>
+                                </a>
+                                <p class="mb-3 font-normal text-lg text-gray-700">{{ substr(strip_tags(html_entity_decode($post->content)), 0, 100) }}...</p>
+
+                                <div class="flex justify-between">
+                                    <a href="{{ route('actualites.article', $post->slug) }}" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-600 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300">
+                                        Voir l'article
+                                        <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        @endforeach
+                    </div>
             </div>
-          </div>
-          <img src="https://i.ibb.co/Ms4qyXp/img-3.png" alt="sitting place" class="w-full mt-8 md:mt-6 hidden sm:block" />
-          <img class="w-full mt-4 sm:hidden" src="https://i.ibb.co/6XYbN7f/Rectangle-29.png" alt="sitting place" />
         </div>
-      </div>
-      <div class="lg:w-1/2 xl:ml-8 lg:ml-4 lg:mt-0 md:mt-6 mt-4 lg:flex flex-col justify-between">
-        <div class="relative">
-          <div>
-            <p class="md:p-10 p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0">12 April 2021</p>
-            <div class="absolute bottom-0 left-0 md:p-10 p-6">
-              <h2 class="text-xl font-semibold 5 text-white">The Decorated Ways</h2>
-              <p class="text-base leading-4 text-white mt-2">Dive into minimalism</p>
-              <a href="#" class="flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline">
-                <p class="pr-2 text-sm font-medium leading-none">Read More</p>
-                →
-              </a>
-            </div>
-          </div>
-          <img src="https://i.ibb.co/6Wfjf2w/img-4.png" alt="sitting place" class="w-full sm:block hidden" />
-          <img class="w-full sm:hidden" src="https://i.ibb.co/dpXStJk/Rectangle-29.png" alt="sitting place" />
         </div>
-        <div class="sm:flex items-center justify-between xl:gap-x-8 gap-x-6 md:mt-6 mt-4">
-          <div class="relative w-full">
-            <div>
-              <p class="p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0">12 April 2021</p>
-              <div class="absolute bottom-0 left-0 p-6">
-                <h2 class="text-xl font-semibold 5 text-white">The Decorated Ways</h2>
-                <p class="text-base leading-4 text-white mt-2">Dive into minimalism</p>
-                <a href="#" class="flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline">
-                  <p class="pr-2 text-sm font-medium leading-none">Read More</p>
-                  →
-                </a>
-              </div>
+    </section>
+
+    <section id="localization-map">
+        <div class="mapouter">
+            <div class="gmap_canvas">
+                <iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=La%20roche%20sur%20yon&t=&z=7&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
             </div>
-            <img src="https://i.ibb.co/3yvZBpm/img-5.png" class="w-full" alt="chair" />
-          </div>
-          <div class="relative w-full sm:mt-0 mt-4">
-            <div>
-              <p class="p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0">12 April 2021</p>
-              <div class="absolute bottom-0 left-0 p-6">
-                <h2 class="text-xl font-semibold 5 text-white">The Decorated Ways</h2>
-                <p class="text-base leading-4 text-white mt-2">Dive into minimalism</p>
-                <a href="#" class="flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline">
-                  <p class="pr-2 text-sm font-medium leading-none">Read More</p>
-                  →
-                </a>
-              </div>
-            </div>
-            <img src="https://i.ibb.co/gDdnJb5/img-6.png" class="w-full" alt="wall design" />
-          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
+    </section>
 
 </main>
 

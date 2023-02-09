@@ -17,7 +17,6 @@ header#header {
     align-items: center;
 
     .logo-img {
-        flex: 1;
         height:2rem;
         img {height: 100%;}
     }
@@ -25,7 +24,8 @@ header#header {
     .menu {
         display: flex;
         justify-content: center;
-        flex: 1 1 0%;
+        flex: 1;
+        padding-right: 37.37px;
 
         ul {
             margin: 0;
@@ -48,7 +48,6 @@ header#header {
         }
     }
 
-    &::after{content:"";width:100%;display: block;flex:1}
 
     /* BURGER MENU */
     .bm-icon {
@@ -100,6 +99,9 @@ header#header {
     }
     // Burger menu active
     @media screen and (max-width: 768px) {
+
+        justify-content: space-between;
+
         &.active{
             background-color: #fff;
             transition: all 0s ease;

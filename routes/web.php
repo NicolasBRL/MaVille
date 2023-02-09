@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Post;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,7 +16,8 @@ use Illuminate\Support\Facades\Route;
 
 // Page accueil
 Route::get('/', function () {
-    return view('home');
+    $posts = Post::orderBy('created_at', 'DESC')->take(3)->get();
+    return view('home', compact('posts'));
 })->name('home');
 
 // Page actalité
