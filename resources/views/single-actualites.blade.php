@@ -34,10 +34,10 @@
 
         <div class="last-posts-container w-11/12 mx-auto">
             <h2>Nos derniers articles</h2>
-            <div class="p-4 grid gap-8 grid-cols-3">
+            <div class="p-4 grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
                 @foreach($lastPosts as $post)
 
-                <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+                <div class="md:max-w-sm bg-white border border-gray-200 rounded-lg shadow">
                     <a href="{{ route('actualites.article', $post->slug) }}">
                         <img class="rounded-t-lg max-h-40 w-full object-cover" src="{{ asset('storage/'.$post->thumb_path) }}" alt="" />
                     </a>

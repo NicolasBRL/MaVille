@@ -37,9 +37,9 @@
         <div class="container mx-auto text-4xl font-bold">
             <h2>Nos dernières actualités</h2>
             <div class="overflow-hidden">
-                    <div class="py-6 grid gap-8 grid-cols-3">
+                    <div class="py-6 grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
                         @foreach($posts as $post)
-                        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+                        <div class="md:max-w-sm bg-white border border-gray-200 rounded-lg shadow">
                             <a href="{{ route('actualites.article', $post->slug) }}">
                                 <img class="rounded-t-lg max-h-64 w-full object-cover" src="{{ asset('storage/'.$post->thumb_path) }}" alt="" />
                             </a>
